@@ -1,19 +1,21 @@
+.ssh_connection: &ssh_connection
+  script:
+      - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+      - mkdir -p ~/.ssh
+      - eval $(ssh-agent -s)
+      - ssh-add <(echo "$PRIVATE_KEY" | base64 -d)
+      - mkdir -p ~/.ssh
+      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+      - 'ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP'
+
 # Defines stages which are to be executed
 stages:
   - deploy
   - compile-assets
-  
-before_script:
-  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-  - mkdir -p ~/.ssh
-  - eval $(ssh-agent -s)
-  - ssh-add <(echo "$PRIVATE_KEY" | base64 -d)
-  - mkdir -p ~/.ssh
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-  - 'ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP'
 
 Deploy:
   stage: deploy
+  <<: *ssh_connection
   script:
   - >
      "cd $SERVER_DIR_WWW 
@@ -26,6 +28,7 @@ Deploy:
 
 Compile SCSS:
   stage: compile-assets
+  <<: *ssh_connection
   script:
   - >
      "cd $SERVER_DIR_WWW/assets/css 
