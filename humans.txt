@@ -1,0 +1,20 @@
+﻿  _____   __           _   _____       _     _      _          _    
+ |  __ \ /_/          (_) |  __ \     | |   (_)    | |        | |   
+ | |__) |___ _ __ ___  _  | |__) |___ | |__  _  ___| |__   ___| |_  
+ |  _  // _ \ '_ ` _ \| | |  _  // _ \| '_ \| |/ __| '_ \ / _ \ __| 
+ | | \ \  __/ | | | | | | | | \ \ (_) | |_) | | (__| | | |  __/ |_  
+ |_|  \_\___|_| |_| |_|_| |_|  \_\___/|_.__/|_|\___|_| |_|\___|\__| 
+                                                                    
+                                                                    
+Contact: remi.robichet@gmail.com
+Location: Toulouse, France
+Language: Français
+
+/* Resources */
+
+Software: Brackets, Photoshop, Illustrator, FileZilla
+Doctype: HTML5
+Standards: HTML5, CSS3
+
+Fonts: https://www.google.com/fonts
+Icons: http://fortawesome.github.io/Font-Awesome/
