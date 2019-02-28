@@ -1,1 +1,5 @@
+/* Prepros config */
 prepros*.config
+
+/* CSS */
+*.css
