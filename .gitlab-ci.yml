@@ -1,5 +1,6 @@
 # Defines stages which are to be executed
 stages:
+  - compile-assets
   - deploy
   
 before_script:
@@ -14,7 +15,7 @@ before_script:
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/plain-html
 Compile SCSS:
-  stage: deploy
+  stage: compile-assets
   script:
   - >
      "cd $SERVER_DIR_WWW/assets/css 
