@@ -1,23 +1,22 @@
-.ssh_connection: &ssh_connection
-  script:
-      - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-      - mkdir -p ~/.ssh
-      - eval $(ssh-agent -s)
-      - ssh-add <(echo "$PRIVATE_KEY" | base64 -d)
-      - mkdir -p ~/.ssh
-      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-      - 'ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP'
-
 # Defines stages which are to be executed
 stages:
   - deploy
   - compile-assets
-
+  
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/plain-html
 Deploy:
   stage: deploy
-  <<: *ssh_connection
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - mkdir -p ~/.ssh
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$PRIVATE_KEY" | base64 -d)
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
   - >
+     ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP 
      "cd $SERVER_DIR_WWW 
      && git pull 
      &&  ln -sf $SERVER_DIR_V1 v1 
@@ -28,9 +27,16 @@ Deploy:
 
 Compile SCSS:
   stage: compile-assets
-  <<: *ssh_connection
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - mkdir -p ~/.ssh
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$PRIVATE_KEY" | base64 -d)
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
   - >
+     ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP 
      "cd $SERVER_DIR_WWW/assets/css 
      && sass --update styles.scss:styles.css
      && exit"
