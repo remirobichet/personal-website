@@ -14,6 +14,12 @@ Deploy:
   - mkdir -p ~/.ssh
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-  - ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP "cd $SERVER_DIR_WWW && git pull && exit"
+  - >
+     ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP 
+     "cd $SERVER_DIR_WWW 
+     && git pull 
+     &&  ln -sf $SERVER_DIR_V1 v1 
+     &&  ln -sf $SERVER_DIR_HOVERGAME hovergame 
+     && exit"
   only:
   - master
