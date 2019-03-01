@@ -1,0 +1,46 @@
+$print_font_size: 11/16;
+
+.print_show {
+    display: inherit;
+}
+
+.print_hide {
+    display: none;
+}
+
+body {
+    font-size: calc(#{$print_font_size} * 1em);
+    margin: auto;
+
+    hr {
+        margin: 20px 50px;
+    }
+
+    header::before,
+    article::before {
+        font-size: calc(#{$print_font_size} * 25px);
+    }
+
+    article:nth-of-type(2) {
+        span {
+            display: inline-block;
+            line-height: 1;
+            padding: 8px;
+        }
+    }
+
+    a:link:not(.print_no_href):after,
+    a:visited:not(.print_no_href):after {
+        content: " ("attr(href) ") ";
+        font-size: 80%;
+    }
+
+    a:not([href^="http"]):not(.print_no_href):after {
+        content: " (https://remirobichet.fr/"attr(href) ") ";
+    }
+}
+
+@page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm; 
+}

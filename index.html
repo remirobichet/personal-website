@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print">
     <link rel="shortcut icon" type="image/png" href="assets/images/logoremirobichet.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
@@ -32,12 +33,13 @@
 <body>
 
     <header data-text="A propos">
-        <p>Bienvenue sur mon site, je suis</p>
+        <p><span class="print_hide">Bienvenue sur mon site</span><span class="print_show">Voici mon CV</span>, je suis</p>
         <h1>Rémi Robichet</h1>
         <div class="discover"></div>
         <h2>— développeur web à Toulouse.</h2>
         <br />
         <p>Passionné de l'univers du web.</p>
+        <br class="print_show"/>
         <p>Ingénieur Des Technologies De L'Information à CGI Toulouse.</p>
     </header>
 
@@ -61,7 +63,7 @@
                 j'y partage tous les contenus web qui m’inspirent.
                 <div class="discover"></div>
             </li>
-            <li><i class="fa fa-quote-right"></i> <strike><a href="javascript:;" target="_blank">Mon blog</a></strike>:
+            <li><i class="fa fa-quote-right"></i> <strike><a href="javascript:;" target="_blank" class="print_no_href">Mon blog</a></strike>:
                 tutos, ressources, nouveautés, sur le web évidement.
                 <div class="discover"></div>
             </li>
@@ -69,7 +71,7 @@
                 mini jeu créé en HTML/CSS.
                 <div class="discover"></div>
             </li>
-            <li><i class="fa fa-file-text"></i> <a href="assets/images/cv.pdf" target="_blank">CV</a>: toutes mes
+            <li class="print_hide"><i class="fa fa-file-text"></i> <a href="assets/images/cv.pdf" target="_blank">CV</a>: toutes mes
                 informations en 1 page.</li>
             <li><i class="fa fa-android"></i> <a href="https://play.google.com/store/apps/details?id=app.tolosavelo"
                     target="_blank">Tolosa'Vélo</a>: Application android permettant de trouver des vélos et emplacement
@@ -124,12 +126,12 @@
         <br>
         <p><i class="fa fa-phone"></i> 06 43 81 87 97</p>
         <br>
-        <p><i class="fa fa-envelope"></i> <a href="mailto:remi.robichet@gmail.com">remi.robichet@gmail.com</a></p>
+        <p><i class="fa fa-envelope"></i> <a href="mailto:remi.robichet@gmail.com" class="print_no_href">remi.robichet@gmail.com</a></p>
     </article>
 
-    <hr>
+    <hr class="print_hide">
 
-    <article>
+    <article class="print_hide">
         <p>Rémi Robichet © #v28022019 - From scratch
             <br>Check the <a href="humans.txt">humans.txt</a> file !
             <br><a href="/v1">Anciennes versions du site</a>
