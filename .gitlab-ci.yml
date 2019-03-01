@@ -39,6 +39,7 @@ Compile SCSS:
      ssh -p $SERVER_PORT $SERVER_USER@$SERVER_IP 
      "cd $SERVER_DIR_WWW/assets/css 
      && sass --update styles.scss:styles.css
+     && sass --update print.scss:print.css
      && exit"
   only:
   - master
