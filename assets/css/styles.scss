@@ -21,7 +21,7 @@ $url_4: url(../images/hovergame.gif);
     content: attr(data-text);
     position: absolute;
     top: 0;
-    right: -40px;
+    right: 0px;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     font-size: 25px;
@@ -144,12 +144,13 @@ article {
     }
 }
 
-header::before {
-    @extend %extend_1;
-}
+header,
+article {
+    padding-right: 40px;
 
-article::before {
-    @extend %extend_1;
+    &::before {
+        @extend %extend_1;
+    }
 }
 
 .preload {
