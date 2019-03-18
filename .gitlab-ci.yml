@@ -10,9 +10,9 @@ Deploy:
   script:
   - >
      cd $SERVER_DIR_WWW 
-     && sudo git pull 
-     && sudo ln -sf $SERVER_DIR_V1 v1 
-     && sudo ln -sf $SERVER_DIR_HOVERGAME hovergame 
+     && git pull 
+     && ln -sf $SERVER_DIR_V1 v1 
+     && ln -sf $SERVER_DIR_HOVERGAME hovergame 
      && exit
   only:
   - master
@@ -22,8 +22,8 @@ Compile SCSS:
   script:
   - >
      cd $SERVER_DIR_WWW/assets/css 
-     && sudo sass --update styles.scss:styles.css
-     && sudo sass --update print.scss:print.css
+     && sass --update styles.scss:styles.css
+     && sass --update print.scss:print.css
      && exit
   only:
   - master
