@@ -11,8 +11,8 @@ Deploy:
   - >
      cd $SERVER_DIR_WWW 
      && git pull 
-     && ln -s $SERVER_DIR_V1 v1 
-     && ln -s $SERVER_DIR_HOVERGAME hovergame 
+     && ln -sf $SERVER_DIR_V1 v1 
+     && ln -sf $SERVER_DIR_HOVERGAME hovergame 
      && exit
   only:
   - master
