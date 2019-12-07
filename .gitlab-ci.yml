@@ -1,29 +1,13 @@
 # Defines stages which are to be executed
 stages:
-  - deploy
-  - compile-assets
-  
-# This file is a template, and might need editing before it works on your project.
-# Full project: https://gitlab.com/pages/plain-html
-Deploy:
-  stage: deploy
-  script:
-  - >
-     cd $SERVER_DIR_WWW 
-     && git pull 
-     && ln -sfn $SERVER_DIR_V1 v1 
-     && ln -sfn $SERVER_DIR_HOVERGAME hovergame 
-     && exit
-  only:
-  - master
+  - compile-scss
 
 Compile SCSS:
-  stage: compile-assets
+  stage: compile-scss
+  image: node:8.15-alpine
   script:
-  - >
-     cd $SERVER_DIR_WWW/assets/css 
-     && sass --update styles.scss:styles.css
-     && sass --update print.scss:print.css
-     && exit
+  - yarn global add node-sass
+  - node-sass $SERVER_DIR_WWW/assets/css/styles.scss $SERVER_DIR_WWW/assets/css/styles.css --style compressed
+  - node-sass $SERVER_DIR_WWW/assets/css/print.scss $SERVER_DIR_WWW/assets/css/print.scss --style compressed
   only:
   - master
