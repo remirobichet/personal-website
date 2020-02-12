@@ -1,5 +1,9 @@
-/* Prepros config */
-prepros*.config
+/* npm */
+node_modules/
+
+/* parcel */
+.cache/
+dist/
 
 /* CSS */
 *.css
