@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/error.html
+  status = 404
