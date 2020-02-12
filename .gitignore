@@ -3,3 +3,6 @@ prepros*.config
 
 /* CSS */
 *.css
+
+/* IDE */
+.idea/
