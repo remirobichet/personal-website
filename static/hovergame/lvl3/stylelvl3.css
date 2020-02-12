@@ -1,0 +1,881 @@
+/* PAGE */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    background-color: #fff;
+    color: #3fc380;
+    overflow: hidden;
+}
+
+a {
+    color: #575757;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: 'Indie Flower', cursive;
+}
+
+#nop {
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    display: none;
+    width: 90%;
+    margin: auto;
+    font-size: 200%;
+}
+
+#nop span {
+    width: 90%;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#ctnall {
+    width: 100%;
+    height: auto;
+    margin: 50px auto auto auto;
+}
+
+#ctr {
+    width: 810px;
+    height: 290px;
+    margin: auto;
+}
+
+#ctnall div {
+    cursor: url("../images/cursor.png") 1 1, crosshair;
+}
+
+.a {
+    width: 150px;
+    height: 50px;
+    background: #297F54;
+}
+
+.b {
+    width: 120px;
+    height: 20px;
+    position: relative;
+    top: 15px;
+    left: 150px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.a:hover > .b {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.c {
+    width: 120px;
+    height: 10px;
+    position: relative;
+    top: 5px;
+    left: 120px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.b:hover > .c {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.d {
+    width: 120px;
+    height: 5px;
+    position: relative;
+    top: 2.5px;
+    left: 120px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.c:hover > .d {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.e {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 12.5px;
+    left: 120px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.d:hover > .e {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.f {
+    width: 15px;
+    height: 100px;
+    position: relative;
+    top: 30px;
+    left: 7.5px;
+    background: #297F54;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.e:hover > .f {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.g {
+    width: 50px;
+    height: 10px;
+    position: relative;
+    left: 15px;
+    top: 90px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.f:hover > .g {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.h {
+    width: 5px;
+    height: 100px;
+    position: relative;
+    bottom: 90px;
+    left: 50px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.g:hover > .h {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.i {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+    right: 12.5px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.h:hover > .i {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.j {
+    width: 200px;
+    height: 5px;
+    position: relative;
+    top: 12.5px;
+    left: 30px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.i:hover > .j {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.k {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    bottom: 2.5px;
+    left: 200px;
+    background: #297F54;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.j:hover > .k {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.l {
+    width: 5px;
+    height: 80px;
+    top: 10px;
+    left: 2.5px;
+    position: relative;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.k:hover > .l {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.m {
+    width: 640px;
+    height: 20px;
+    position: relative;
+    right: 640px;
+    top: 60px;
+    ;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.l:hover > .m {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.n {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: relative;
+    right: 40px;
+    bottom: 30px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.m:hover > .n {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.o {
+    width: 10px;
+    height: 50px;
+    position: relative;
+    left: 35px;
+    top: 79px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.n:hover > .o {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.p {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    right: 10px;
+    top: 49px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.o:hover > .p {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.q {
+    width: 80px;
+    height: 10px;
+    position: relative;
+    top: 10px;
+    right: 79px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.p:hover > .q {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.r {
+    width: 10px;
+    height: 50px;
+    position: relative;
+    right: 10px;
+    background: #297F54;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.q:hover > .r {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.s {
+    width: 140px;
+    height: 10px;
+    position: relative;
+    right: 0px;
+    top: 50px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.r:hover > .s {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.t {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+    left: 140px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.s:hover > .t {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.u {
+    width: 10px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    bottom: 50px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.t:hover > .u {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.v {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    right: 5px;
+    bottom: 3px;
+    background: #297F54;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.u:hover > .v {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.w {
+    width: 50px;
+    height: 10px;
+    position: relative;
+    left: 19px;
+    top: 5px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.v:hover > .w {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.x {
+    width: 50px;
+    height: 80px;
+    position: relative;
+    left: 50px;
+    bottom: 35px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.w:hover > .x {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.y {
+    width: 50px;
+    height: 60px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.x:hover > .y {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.z {
+    width: 50px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.y:hover > .z {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.aa {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.z:hover > .aa {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ab {
+    width: 50px;
+    height: 2px;
+    position: relative;
+    left: 50px;
+    top: 9px;
+    background: #297F54;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.aa:hover > .ab {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ac {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 50px;
+    bottom: 15px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ab:hover > .ac {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ad {
+    width: 5px;
+    height: 30px;
+    position: relative;
+    left: 12.5px;
+    bottom: 30px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ac:hover > .ad {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ae {
+    width: 100px;
+    height: 5px;
+    position: relative;
+    left: 5px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ad:hover > .ae {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.af {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 99px;
+    bottom: 7.5px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ae:hover > .af {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ag {
+    width: 5px;
+    height: 70px;
+    position: relative;
+    left: 7.5px;
+    top: 19px;
+    background: #3AB275;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.af:hover > .ag {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ah {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    right: 12.5px;
+    top: 69px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ag:hover > .ah {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ai {
+    width: 50px;
+    height: 5px;
+    position: relative;
+    right: 49px;
+    top: 12.5px;
+    background: #297F54;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ah:hover > .ai {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.aj {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    right: 29px;
+    bottom: 12.5px;
+    background: #48DE92;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ai:hover > .aj {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.ak {
+    width: 2px;
+    height: 20px;
+    position: relative;
+    left: 14px;
+    top: 29px;
+    background: #52FFA7;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.aj:hover > .ak {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.al {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    right: 4px;
+    top: 15px;
+    background: #3FC380;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.ak:hover > .al {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+
+/*
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j,
+.k,
+.l,
+.m,
+.n,
+.o,
+.p,
+.q,
+.r,
+.s,
+.t,
+.u,
+.v,
+.w,
+.x,
+.y,
+.z,
+.aa,
+.ab,
+.ac,
+.ad,
+.ae,
+.af,
+.ag,
+.ah,
+.ai,
+.aj,
+.ak,
+.al {
+    visibility: visible;
+    opacity: 1;
+}
+
+*/
+
+@media screen and (max-width: 900px) {
+    #nop {
+        display: block;
+    }
+    body>:not(#nop) {
+        display: none;
+    }
+}
+
+#ctnall div {
+    -webkit-animation: change 5s linear infinite;
+    animation: change 5s linear infinite;
+}
+
+@-webkit-keyframes change {
+    50% {
+        background-color: transparent;
+    }
+}
+
+@keyframes change {
+    50% {
+        background-color: transparent;
+    }
+}

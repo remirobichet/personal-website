@@ -1,0 +1,100 @@
+/* Header */
+#header{
+font-family:Courier New;
+}
+
+#header h1{
+text-align:center;
+}
+
+/* Changement couleur avec bouton checkbox #header p, #header input{
+display:inline-block;
+font-size:0.6em;
+float:right;
+} */
+
+/* Barre sous les menus */
+.hr2{
+width:100px; 
+color:black; 
+background-color:black;
+}
+
+/* Menu */
+ul{
+list-style-type: none;
+padding-left:0;
+}
+
+li{
+float:left;
+width:20%;
+margin-left:2%;
+margin-right:2%;
+}
+
+#nav a:link, #nav a:visited {
+display:block;
+width:240px;
+width:100%;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+text-decoration:none;
+color:black;
+font-weight: bold;
+font-size:1.2em;
+transition:.5s;
+}
+
+/* Propriétés + Grossissement des menus */
+#nav a:hover, #nav a:active {
+font-size:1.8em;
+transition:.5s;
+}
+
+/* Initiales géantes + Apparition */
+pre{
+color:white;
+transition:1s;
+width:100%;
+font-size:0.6em;
+}
+
+pre:hover{
+color:black;
+transition:1s;
+}
+
+/* Footer */
+#footer{
+position:fixed;
+bottom:0;
+width:100%;
+text-align:center;
+font-size:0.8em;
+}
+
+
+/* Changement couleur avec bouton checkbox
+.to-be-changed {
+    color: black;
+}
+ 
+input[type=checkbox]:checked  .to-be-changed {
+color: pink;
+}
+input[type=checkbox]:checked > .to-be-changed {
+color: pink;
+}
+input[type=checkbox]:checked + .to-be-changed {
+color: pink;
+}
+input[type=checkbox]:checked ~ .to-be-changed {
+color: pink;
+}
+*/
+
+
+
+
