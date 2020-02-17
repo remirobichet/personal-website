@@ -123,6 +123,18 @@ article {
         text-align: center;
     }
 
+    > [data-template] {
+        display: none;
+
+        &.loaded {
+            display: block;
+
+            &[data-template="contact"] {
+                display: flex;
+            }
+        }
+    }
+
     li {
         i[class*="codepen"]+a:hover+div {
             background-image: $url_codepen;

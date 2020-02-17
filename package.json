@@ -19,6 +19,7 @@
   },
   "homepage": "https://gitlab.com/remirbt/personal-website#readme",
   "dependencies": {
+    "mustache": "^4.0.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.3.1"
   },

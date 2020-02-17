@@ -25,6 +25,7 @@
     <link href="assets/css/print.scss" rel="stylesheet" type="text/css" media="print">
     <link rel="shortcut icon" type="image/png" href="assets/images/logoremirobichet.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -79,51 +80,31 @@
     <hr>
 
     <article data-text="Compétences">
-        <p>
-            <span>Photoshop</span>
-            <span>Illutrator</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Javascript</span>
-            <span>jQuery</span>
-            <span>Angular 2+</span>
-            <span>PHP</span>
-            <span>Wordpress</span>
-            <span>Symfony</span>
-            <span>SQL</span>
-            <span>Faveod</span>
-            <span>Cordova</span>
-            <span>Versioning</span>
-            <span>Gitlab</span>
-            <span>Jenkins</span>
-            <span>Agile</span>
+        <p data-template="skills">
+            {{#skillsData}}
+            <span>{{.}}</span>
+            {{/skillsData}}
         </p>
     </article>
 
     <hr>
 
     <article data-text="Parcours">
-        <ul>
-            <li><b>Octobre 2017 à aujourd'hui</b> Membre à <a href="https://www.cgi.fr/">CGI</a> Toulouse - Ingénieur Des Technologies De L'Information</li>
-            <li><b>Avril à octobre 2017</b> Stage de fin d'étude à <a href="https://www.cgi.fr/">CGI</a> Toulouse - LP
-                RTAI (Responsable Technique d'Application Internet)</li>
-            <li><b>Avril à juin 2016:</b> Stage à l'Observatoire Midi-Pyrénées Service de données (développement web)</li>
-            <li><b>2015/2016:</b> DUT Métiers du Mutlimédia et de l’Internet</li>
-            <li><b>Juillet 2014:</b> Permis B et voiture</li>
-            <li><b>Juillet 2014:</b> Baccalauréat Sciences et Technologies de l'Industrie et du Développement Durable
-                option Système d’Information et Numérique (mention Bien)</li>
+        <ul data-template="career">
+            {{#careerData}}
+            <li><b>{{date}}</b> {{mission}}</li>
+            {{/careerData}}
         </ul>
     </article>
 
     <hr>
 
     <article data-text="Contact">
-        <p><i class="fa fa-map-marker"></i> 13 rue des ammidonniers,
-            <br> 31000 Toulouse</p>
-        <br>
-        <p><i class="fa fa-phone"></i> 06 43 81 87 97</p>
-        <br>
-        <p><i class="fa fa-envelope"></i> <a href="mailto:remi.robichet@gmail.com" class="print_no_href">remi.robichet@gmail.com</a></p>
+        <div data-template="contact">
+            {{#contactData}}
+            <p>{{icon}} {{data}}</p>
+            {{/contactData}}
+        </div>
     </article>
 
     <hr class="print_hide">
