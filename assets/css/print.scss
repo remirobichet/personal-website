@@ -29,6 +29,10 @@ body {
         }
     }
 
+    article > [data-template].loaded[data-template="contact"] {
+        flex-direction: row;
+    }
+
     a:link:not(.print_no_href):after,
     a:visited:not(.print_no_href):after {
         content: " ("attr(href) ") ";
