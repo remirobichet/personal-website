@@ -1,6 +1,6 @@
 //colors
 $color_black: #222;
-$color_green: #3fc380;
+$color_main: #3fc380;
 $color_grey: #888;
 
 //fonts
@@ -25,7 +25,7 @@ $url_hovergame: url(../images/hovergame.gif);
     writing-mode: vertical-rl;
     text-orientation: sideways;
     font-size: 25px;
-    color: $color_green;
+    color: $color_main;
     opacity: .3;
 }
 
@@ -48,23 +48,45 @@ body {
     font-family: $font_open-sans, $font_sans-serif;
     color: $color_black;
     margin: 20px;
+    position: relative;
 }
 
 h1 {
-    color: $color_green;
+    color: $color_main;
 }
 
 a {
-    color: $color_green;
+    color: $color_main;
 }
 
 i {
-    color: $color_green;
+    color: $color_main;
 }
 
 hr {
     border-top: solid $color_grey 1px;
     margin: 50px;
+}
+
+aside {
+    text-align: center;
+    color: $color_main;
+
+    button {
+        cursor: pointer;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
 }
 
 header {
@@ -100,7 +122,7 @@ article {
         }
 
         span {
-            border: solid $color_green 2px;
+            border: solid $color_main 2px;
             padding: 5px;
             margin: 4px;
         }
@@ -232,7 +254,7 @@ article {
 @media screen and(min-width: 1024px) {
     body {
         max-width: 984px;
-        margin: 20px auto;
+        margin: 0 auto 20px;
     }
 
     article {
