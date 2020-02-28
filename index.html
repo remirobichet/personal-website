@@ -81,9 +81,9 @@
 
     <article data-text="Compétences">
         <p data-template="skills">
-            {{#skillsData}}
+            {{#data}}
             <span>{{.}}</span>
-            {{/skillsData}}
+            {{/data}}
         </p>
     </article>
 
@@ -91,9 +91,9 @@
 
     <article data-text="Parcours">
         <ul data-template="career">
-            {{#careerData}}
+            {{#data}}
             <li><b>{{date}}</b> {{mission}}</li>
-            {{/careerData}}
+            {{/data}}
         </ul>
     </article>
 
@@ -101,9 +101,9 @@
 
     <article data-text="Contact">
         <div data-template="contact">
-            {{#contactData}}
+            {{#data}}
             <p>{{icon}} {{data}}</p>
-            {{/contactData}}
+            {{/data}}
         </div>
     </article>
 
