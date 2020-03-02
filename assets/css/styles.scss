@@ -1,7 +1,13 @@
 //colors
-$color_black: #222;
+$color_background: #FFF;
+$color_text: #222;
 $color_main: #3fc380;
-$color_grey: #888;
+$color_separator: #888;
+
+$color_background_dark: #303030;
+$color_text_dark: #FFF  ;
+$color_main_dark: #3fc380;
+$color_separator_dark: #888;
 
 //fonts
 $font_open-sans: 'Open Sans';
@@ -14,6 +20,18 @@ $url_twitter: url(../images/twitter.gif);
 $url_blog: url(../images/blog.gif);
 $url_hovergame: url(../images/hovergame.gif);
 
+html {
+  --color-background: #{$color_background};
+  --color-text: #{$color_text};
+  --color-main: #{$color_main};
+}
+
+html[data-theme='dark'] {
+  --color-background: #{$color_background_dark};
+  --color-text: #{$color_text_dark};
+  --color-main: #{$color_main_dark};
+}
+
 //@extend-elements
 //original selectors
 //header::before, article::before
@@ -25,10 +43,9 @@ $url_hovergame: url(../images/hovergame.gif);
     writing-mode: vertical-rl;
     text-orientation: sideways;
     font-size: 25px;
-    color: $color_main;
+    color: var(--color-main);
     opacity: .3;
 }
-
 
 * {
     box-sizing: border-box;
@@ -46,31 +63,24 @@ $url_hovergame: url(../images/hovergame.gif);
 
 body {
     font-family: $font_open-sans, $font_sans-serif;
-    color: $color_black;
+    background-color: var(--color-background);
+    color: var(--color-text);
     margin: 20px;
     position: relative;
 }
 
-h1 {
-    color: $color_main;
-}
-
-a {
-    color: $color_main;
-}
-
-i {
-    color: $color_main;
+h1, i, a {
+    color: var(--color-main);
 }
 
 hr {
-    border-top: solid $color_grey 1px;
+    border-top: solid var(--color-separator) 1px;
     margin: 50px;
 }
 
 aside {
     text-align: center;
-    color: $color_main;
+    color: var(--color-main);
 
     button {
         cursor: pointer;
@@ -122,7 +132,7 @@ article {
         }
 
         span {
-            border: solid $color_main 2px;
+            border: solid var(--color-main) 2px;
             padding: 5px;
             margin: 4px;
         }
