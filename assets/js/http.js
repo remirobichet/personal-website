@@ -1,3 +1,4 @@
+import {ready} from './base'
 import Mustache from 'mustache';
 import {portfolio, intro, previous, sections, title} from '/assets/i18n/i18n.json';
 
@@ -25,7 +26,8 @@ let getStaticData = (type, lang = '') => {
 let getSectionNameData = (type, lang = '') => {
     let templates = document.querySelectorAll(`[data-text]`);
     templates.forEach((template) => {
-        template.dataset.text = type[lang][template.dataset.text]
+        template.dataset.text = type[lang][template.dataset.text];
+        template.classList.add('loaded');
     });
 };
 
@@ -37,11 +39,13 @@ let httpGetData = (lang) => {
     httpGetFromType('skills');
     httpGetFromType('career', lang);
     httpGetFromType('contact');
-    getStaticData(portfolio, lang);
-    getStaticData(intro, lang);
-    getStaticData(previous, lang);
-    getSectionNameData(sections, lang);
-    getTitleData(title, lang);
+    ready(() => {
+        getStaticData(portfolio, lang);
+        getStaticData(intro, lang);
+        getStaticData(previous, lang);
+        getSectionNameData(sections, lang);
+        getTitleData(title, lang);
+    });    
 };
 
 export { httpGetData };

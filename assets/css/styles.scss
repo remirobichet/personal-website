@@ -122,6 +122,14 @@ header {
             background-image: $url_me;
         }
     }
+
+    [data-template] {
+        display: none;
+
+        &.loaded {
+            display: block;
+        }
+    }
 }
 
 article {
@@ -204,9 +212,11 @@ article {
 header,
 article {
     padding-right: 40px;
-
-    &::before {
-        @extend %extend_1;
+    
+    &.loaded {
+        &::before {
+            @extend %extend_1;
+        }
     }
 }
 
