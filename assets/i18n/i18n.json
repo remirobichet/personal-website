@@ -1,0 +1,131 @@
+{
+  "title" : {
+    "name": "title",
+    "fr": "Rémi Robichet - Développeur web",
+    "en": "Rémi Robichet - Web developer"
+  },
+  "portfolio": {
+    "name": "portfolio",
+    "fr": [
+      {
+        "icon": "codepen",
+        "url": "http://codepen.io/remirobichet/",
+        "name": "Codepen",
+        "text": "toutes mes création \"front-end\" sont sur Codepen."
+      },
+      {
+        "icon": "github",
+        "url": "https://github.com/remirobichet",
+        "name": "GitHub",
+        "text": "divers projets et expérimentations."
+      },
+      {
+        "icon": "gitlab",
+        "url": "https://gitlab.com/remirobichet",
+        "name": "GitLab",
+        "text": "d'autres projets et expérimentations, avec DevOps !"
+      },
+      {
+        "icon": "twitter",
+        "url": "https://twitter.com/RemiRobichet",
+        "name": "Twitter",
+        "text": "j'y partage tous les contenus web qui m’inspirent."
+      },
+      {
+        "icon": "gamepad",
+        "url": "hovergame/",
+        "name": "Hover Game",
+        "text": "mini jeu créé en HTML/CSS."
+      },
+      {
+        "icon": "android",
+        "url": "https://play.google.com/store/apps/details?id=app.tolosavelo",
+        "name": "Tolosa'Vélo",
+        "text": "application android permettant de trouver des vélos et emplacement vélos disponibles à Toulouse."
+      }
+    ],
+    "en": [
+      {
+        "icon": "codepen",
+        "url": "http://codepen.io/remirobichet/",
+        "name": "Codepen",
+        "text": "all my front-end creations are on Codepen."
+      },
+      {
+        "icon": "github",
+        "url": "https://github.com/remirobichet",
+        "name": "GitHub",
+        "text": "various projects and experiments."
+      },
+      {
+        "icon": "gitlab",
+        "url": "https://gitlab.com/remirobichet",
+        "name": "GitLab",
+        "text": "other projects and experiments, with DevOps!"
+      },
+      {
+        "icon": "twitter",
+        "url": "https://twitter.com/RemiRobichet",
+        "name": "Twitter",
+        "text": "I share all the web content that inspires me."
+      },
+      {
+        "icon": "gamepad",
+        "url": "hovergame/",
+        "name": "Hover Game",
+        "text": "mini game created in HTML / CSS."
+      },
+      {
+        "icon": "android",
+        "url": "https://play.google.com/store/apps/details?id=app.tolosavelo",
+        "name": "Tolosa'Vélo",
+        "text": "Android application allowing you to find bikes and bikes locations available in Toulouse."
+      }
+    ]
+  },
+  "intro": {
+    "name": "intro",
+    "fr": {
+      "welcome-site": "Bienvenue sur mon site",
+      "welcome-print": "Voici mon CV",
+      "jedanselemia": "je suis",
+      "job": "développeur web à Toulouse.",
+      "hobby": "Passionné de l'univers du web.",
+      "job2": "Ingénieur Des Technologies De L'Information à CGI Toulouse."
+    },
+    "en": {
+      "welcome-site": "Welcome to my website",
+      "welcome-print": "Here's my resume",
+      "jedanselemia": "I am",
+      "job": "web developer in Toulouse.",
+      "hobby": "Passionate about the web.",
+      "job2": "Information Technology Engineer at CGI Toulouse."
+    }
+  },
+  "previous": {
+    "name": "previous",
+    "fr": {
+      "previous-version": "Anciennes versions du site"
+    },
+    "en": {
+      "previous-version": "Old versions of the site"
+    }
+  },
+  "sections": {
+    "name": "sections",
+    "fr": {
+      "about": "A propos",
+      "links": "Liens",
+      "skills": "Compétences",
+      "career": "Parcours pro",
+      "contact": "Contact"
+    },
+    "en": {
+      "about": "About",
+      "links": "Links",
+      "skills": "Skills",
+      "career": "Professional course",
+      "contact": "Contact"
+    }
+  }
+}

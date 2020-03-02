@@ -5,8 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Rémi, Robichet, Remi, Rémi Robichet, Remi Robichet, web, cgi, développeur, developpeur, Toulouse, toulouse, mmi, iut, rtai, licence, lp, licence pro">
-    <meta name="description" content="Rémi Robichet, développeur web à Toulouse. Passionné du web et de la culture internet.">
+    <meta name="keywords"
+          content="Rémi, Robichet, Remi, Rémi Robichet, Remi Robichet, web, cgi, développeur, developpeur, Toulouse, toulouse, mmi, iut, rtai, licence, lp, licence pro">
+    <meta name="description"
+          content="Rémi Robichet, développeur web à Toulouse. Passionné du web et de la culture internet.">
     <meta name="author" content="Rémi Robichet">
 
     <meta name="theme-color" content="#3fc380">
@@ -14,9 +16,10 @@
     <meta property="og:title" content="Rémi Robichet">
     <meta property="og:site_name" content="Site personnel de Rémi Robichet">
     <meta property="og:url" content="http://remirobichet.fr/">
-    <meta property="og:description" content="Rémi Robichet, développeur web à Toulouse. Passionné du web et de la culture internet.">
+    <meta property="og:description"
+          content="Rémi Robichet, développeur web à Toulouse. Passionné du web et de la culture internet.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/remirobichet.jpg" />
+    <meta property="og:image" content="assets/images/remirobichet.jpg"/>
 
     <title>Rémi Robichet - Développeur web</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
@@ -24,132 +27,117 @@
     <link href="assets/css/styles.scss" rel="stylesheet">
     <link href="assets/css/print.scss" rel="stylesheet" type="text/css" media="print">
     <link rel="shortcut icon" type="image/png" href="assets/images/logoremirobichet.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
 
-    <aside class="print_hide">
+<aside class="print_hide">
         <span>
             <button class="lang-switcher" data-lang="fr">🇫🇷</button>
             <button class="lang-switcher" data-lang="en">🇬🇧</button>
         </span>
-        <span>
+    <span>
             <button class="theme-switcher" data-theme="light">☀️</button>
             <button class="theme-switcher" data-theme="dark">🌜</button>
         </span>
-    </aside>
+</aside>
 
-    <br class="print_hide">
+<br class="print_hide">
 
-    <header data-text="A propos">
-        <p><span class="print_hide">Bienvenue sur mon site</span><span class="print_show">Voici mon CV</span>, je suis</p>
+<header data-text="about">
+    <div data-template="intro">
+        {{#data}}
+        <p><span class="print_hide">{{welcome-site}}</span><span class="print_show">{{welcome-print}}</span>,
+            {{jedanselemia}}</p>
         <h1>Rémi Robichet</h1>
         <div class="discover"></div>
-        <h2>— développeur web à Toulouse.</h2>
-        <br />
-        <p>Passionné de l'univers du web.</p>
+        <h2>— {{job}}</h2>
+        <br/>
+        <p>{{hobby}}</p>
         <br class="print_show"/>
-        <p>Ingénieur Des Technologies De L'Information à CGI Toulouse.</p>
-    </header>
-
-    <hr>
-
-    <article data-text="Portfolio">
-        <ul>
-            <li><i class="fa fa-codepen"></i> <a href="http://codepen.io/remirobichet/" target="_blank">Codepen</a>:
-                toutes mes création "front-end" sont sur Codepen.
-                <div class="discover"></div>
-            </li>
-            <li><i class="fa fa-github"></i> <a href="https://github.com/remirobichet" target="_blank">GitHub</a>:
-                Divers projets et expérimentations.
-                <div class="discover"></div>
-            </li>
-            <li><i class="fa fa-gitlab"></i> <a href="https://gitlab.com/remirbt" target="_blank">GitLab</a>:
-                D'autres projets et expérimentations, avec DevOps !
-                <div class="discover"></div>
-            </li>
-            <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/RemiRobichet" target="_blank">Twiter</a>:
-                j'y partage tous les contenus web qui m’inspirent.
-                <div class="discover"></div>
-            </li>
-            <li><i class="fa fa-quote-right"></i> <del><a href="javascript:;" target="_blank" class="print_no_href">Mon blog</a></del>:
-                tutos, ressources, nouveautés, sur le web évidement.
-                <div class="discover"></div>
-            </li>
-            <li><i class="fa fa-gamepad"></i> <a href="hovergame/" target="_blank">Hover Game</a>:
-                mini jeu créé en HTML/CSS.
-                <div class="discover"></div>
-            </li>
-            <li class="print_hide"><i class="fa fa-file-text"></i> <a href="javascript:window.print();">CV</a>: toutes mes
-                informations en 1 page.</li>
-            <li><i class="fa fa-android"></i> <a href="https://play.google.com/store/apps/details?id=app.tolosavelo"
-                    target="_blank">Tolosa'Vélo</a>: Application android permettant de trouver des vélos et emplacement
-                vélos disponibles à Toulouse.</li>
-        </ul>
-    </article>
-
-    <hr>
-
-    <article data-text="Compétences">
-        <p data-template="skills">
-            {{#data}}
-            <span>{{.}}</span>
-            {{/data}}
-        </p>
-    </article>
-
-    <hr>
-
-    <article data-text="Parcours">
-        <ul data-template="career">
-            {{#data}}
-            <li><b>{{date}}</b> {{mission}}</li>
-            {{/data}}
-        </ul>
-    </article>
-
-    <hr>
-
-    <article data-text="Contact">
-        <div data-template="contact">
-            {{#data}}
-            <p>{{icon}} {{data}}</p>
-            {{/data}}
-        </div>
-    </article>
-
-    <hr class="print_hide">
-
-    <article class="print_hide">
-        <p>Rémi Robichet © #v12022020 - From scratch
-            <br>Check the <a href="humans.txt">humans.txt</a> file !
-            <br><a href="/v1">Anciennes versions du site</a>
-        </p>
-    </article>
-
-    <div class="preload">
-        <img src="assets/images/remirobichet.jpg" alt="Rémi Robichet">
-        <img src="assets/images/codepen.gif" alt="Codepen preview">
-        <img src="assets/images/twitter.gif" alt="Twitter preview">
-        <img src="assets/images/blog.gif" alt="Blog preview">
-        <img src="assets/images/hovergame.gif" alt="Hover Game preview">
+        <p>{{job2}}</p>
+        {{/data}}
     </div>
+</header>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62788682-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<hr>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+<article data-text="links">
+    <ul data-template="portfolio">
+        {{#data}}
+        <li><i class="fa fa-{{icon}}"></i> <a href="{{url}}" target="_blank">{{name}}</a>:
+            {{text}}
+            <div class="discover"></div>
+        </li>
+        {{/data}}
+        <li class="print_hide"><i class="fa fa-file-text"></i> <a href="javascript:window.print();">CV</a>: toutes mes
+            informations en 1 page.
+        </li>
+    </ul>
+</article>
 
-        gtag('config', 'UA-62788682-1');
-    </script>
+<hr>
 
+<article data-text="skills">
+    <p data-template="skills">
+        {{#data}}
+        <span>{{.}}</span>
+        {{/data}}
+    </p>
+</article>
 
+<hr>
+
+<article data-text="career">
+    <ul data-template="career">
+        {{#data}}
+        <li><b>{{date}}</b> {{mission}}</li>
+        {{/data}}
+    </ul>
+</article>
+
+<hr>
+
+<article data-text="contact">
+    <div data-template="contact">
+        {{#data}}
+        <p>{{icon}} {{data}}</p>
+        {{/data}}
+    </div>
+</article>
+
+<hr class="print_hide">
+
+<article class="print_hide">
+    <p>Rémi Robichet © #v12022020 - From scratch
+        <br>Check the <a href="humans.txt">humans.txt</a> file !
+        <br><a href="/v1">
+            <div data-template="previous">{{#data}}{{previous-version}}{{/data}}</div>
+        </a>
+    </p>
+</article>
+
+<div class="preload">
+    <img src="assets/images/remirobichet.jpg" alt="Rémi Robichet">
+    <img src="assets/images/codepen.gif" alt="Codepen preview">
+    <img src="assets/images/twitter.gif" alt="Twitter preview">
+    <img src="assets/images/blog.gif" alt="Blog preview">
+    <img src="assets/images/hovergame.gif" alt="Hover Game preview">
+</div>
+
+<script src="assets/js/script.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62788682-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-62788682-1');
+</script>
 </body>
 
 </html>
