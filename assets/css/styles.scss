@@ -3,6 +3,7 @@ $color_background: #FFF;
 $color_text: #222;
 $color_main: #3fc380;
 $color_separator: #888;
+$color_code: #AAA;
 
 $color_background_dark: #303030;
 $color_text_dark: #FFF  ;
@@ -76,6 +77,12 @@ h1, i, a {
 hr {
     border-top: solid var(--color-separator) 1px;
     margin: 50px;
+}
+
+code {
+    background: $color_code;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 aside {

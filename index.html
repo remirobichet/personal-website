@@ -70,8 +70,11 @@
             <div class="discover"></div>
         </li>
         {{/data}}
-        <li class="print_hide"><i class="fa fa-file-text"></i> <a href="javascript:window.print();">CV</a>: toutes mes
-            informations en 1 page.
+        <li class="print_hide"><i class="fa fa-file-text"></i> <a href="javascript:window.print();">CV</a>: 
+            <span data-template="cv">{{#data}}{{text}}{{/data}}</span>
+        </li>
+        <li class="print_hide"><i class="fa fa-code"></i> <a href="javascript:;">CV</a>: 
+            <span data-template="cv"><code>$ npx remirobichet-resume</code></span>
         </li>
     </ul>
 </article>

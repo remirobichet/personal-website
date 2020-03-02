@@ -1,6 +1,6 @@
 import {ready} from './base'
 import Mustache from 'mustache';
-import {portfolio, intro, previous, sections, title} from '/assets/i18n/i18n.json';
+import {portfolio, intro, previous, sections, cv, title} from '/assets/i18n/i18n.json';
 
 let httpGetFromType = (type, lang = '') => {
     let request = new XMLHttpRequest();
@@ -19,6 +19,7 @@ let httpGetFromType = (type, lang = '') => {
 
 let getStaticData = (type, lang = '') => {
     let template = document.querySelector(`[data-template="${type.name}"]`);
+    console.log(template.innerHTML)
     template.innerHTML = Mustache.render(template.innerHTML, {data: type[lang]});
     template.classList.add('loaded');
 };
@@ -40,6 +41,7 @@ let httpGetData = (lang) => {
     httpGetFromType('career', lang);
     httpGetFromType('contact');
     ready(() => {
+        getStaticData(cv, lang);
         getStaticData(portfolio, lang);
         getStaticData(intro, lang);
         getStaticData(previous, lang);

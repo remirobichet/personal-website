@@ -127,5 +127,14 @@
       "career": "Professional course",
       "contact": "Contact"
     }
+  },
+  "cv": {
+    "name": "cv",
+    "fr": {
+      "text": "mon curriculum vitae à imprimer."
+    },
+    "en": {
+      "text": "my curriculum vitae to print."
+    }
   }
 }
