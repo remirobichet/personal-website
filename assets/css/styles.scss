@@ -82,6 +82,10 @@ aside {
     text-align: center;
     color: var(--color-main);
 
+    span {
+      margin: 20px;
+    }
+
     button {
         cursor: pointer;
         border: none;
