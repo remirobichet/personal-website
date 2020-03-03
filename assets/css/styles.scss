@@ -14,13 +14,6 @@ $color_separator_dark: #888;
 $font_open-sans: 'Open Sans';
 $font_sans-serif: sans-serif;
 
-//urls
-$url_me: url(../images/remirobichet.jpg);
-$url_codepen: url(../images/codepen.gif);
-$url_twitter: url(../images/twitter.gif);
-$url_blog: url(../images/blog.gif);
-$url_hovergame: url(../images/hovergame.gif);
-
 html {
   --color-background: #{$color_background};
   --color-text: #{$color_text};
@@ -38,12 +31,13 @@ html[data-theme='dark'] {
 //header::before, article::before
 %extend_1 {
     content: attr(data-text);
+    height: max-content;
     position: absolute;
     top: 0;
     right: 0px;
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-main);
     opacity: .3;
 }
@@ -120,16 +114,6 @@ header {
         display: inline-block;
     }
 
-    div>h1 {
-        cursor: pointer;
-
-        &:hover+div {
-            opacity: 0.8;
-            transform: scale(1.05);
-            background-image: $url_me;
-        }
-    }
-
     [data-template] {
         display: none;
 
@@ -186,34 +170,6 @@ article {
             }
         }
     }
-
-    li {
-        i[class*="codepen"]+a:hover+div {
-            background-image: $url_codepen;
-        }
-
-        i[class*="twitter"]+a:hover+div {
-            background-image: $url_twitter;
-        }
-
-        i[class*="quote-right"]+strike:hover+div {
-            background-image: $url_blog;
-        }
-
-        i[class*="gamepad"]+a:hover+div {
-            background-image: $url_hovergame;
-        }
-    }
-
-    a:hover+div {
-        opacity: 0.8;
-        transform: scale(1.05);
-    }
-
-    strike:hover+div {
-        opacity: 0.8;
-        transform: scale(1.05);
-    }
 }
 
 header,
@@ -225,27 +181,6 @@ article {
             @extend %extend_1;
         }
     }
-}
-
-.preload {
-    opacity: 0;
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
-.discover {
-    position: fixed;
-    z-index: -1;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    transition: .8s;
 }
 
 @media screen and(min-width: 480px) {

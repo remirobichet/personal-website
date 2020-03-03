@@ -8,37 +8,37 @@
     "name": "portfolio",
     "fr": [
       {
-        "icon": "codepen",
+        "icon": "🖋️",
         "url": "http://codepen.io/remirobichet/",
         "name": "Codepen",
         "text": "toutes mes création \"front-end\" sont sur Codepen."
       },
       {
-        "icon": "github",
+        "icon": "📁",
         "url": "https://github.com/remirobichet",
         "name": "GitHub",
         "text": "divers projets et expérimentations."
       },
       {
-        "icon": "gitlab",
+        "icon": "📁",
         "url": "https://gitlab.com/remirobichet",
         "name": "GitLab",
         "text": "d'autres projets et expérimentations, avec DevOps !"
       },
       {
-        "icon": "twitter",
+        "icon": "🐦",
         "url": "https://twitter.com/RemiRobichet",
         "name": "Twitter",
         "text": "j'y partage tous les contenus web qui m’inspirent."
       },
       {
-        "icon": "gamepad",
+        "icon": "🕹️",
         "url": "hovergame/",
         "name": "Hover Game",
         "text": "mini jeu créé en HTML/CSS."
       },
       {
-        "icon": "android",
+        "icon": "🚴",
         "url": "https://play.google.com/store/apps/details?id=app.tolosavelo",
         "name": "Tolosa'Vélo",
         "text": "application android permettant de trouver des vélos et emplacement vélos disponibles à Toulouse."
@@ -46,37 +46,37 @@
     ],
     "en": [
       {
-        "icon": "codepen",
+        "icon": "🖋️",
         "url": "http://codepen.io/remirobichet/",
         "name": "Codepen",
         "text": "all my front-end creations are on Codepen."
       },
       {
-        "icon": "github",
+        "icon": "📁",
         "url": "https://github.com/remirobichet",
         "name": "GitHub",
         "text": "various projects and experiments."
       },
       {
-        "icon": "gitlab",
+        "icon": "📁",
         "url": "https://gitlab.com/remirobichet",
         "name": "GitLab",
         "text": "other projects and experiments, with DevOps!"
       },
       {
-        "icon": "twitter",
+        "icon": "🐦",
         "url": "https://twitter.com/RemiRobichet",
         "name": "Twitter",
         "text": "I share all the web content that inspires me."
       },
       {
-        "icon": "gamepad",
+        "icon": "🕹️",
         "url": "hovergame/",
         "name": "Hover Game",
         "text": "mini game created in HTML / CSS."
       },
       {
-        "icon": "android",
+        "icon": "🚴",
         "url": "https://play.google.com/store/apps/details?id=app.tolosavelo",
         "name": "Tolosa'Vélo",
         "text": "Android application allowing you to find bikes and bikes locations available in Toulouse."
@@ -114,18 +114,18 @@
   "sections": {
     "name": "sections",
     "fr": {
-      "about": "A propos",
-      "links": "Liens",
-      "skills": "Compétences",
-      "career": "Parcours pro",
-      "contact": "Contact"
+      "about": "😄 A propos",
+      "links": "🔗 Liens",
+      "skills": "🤹 Compétences",
+      "career": "⏱️Parcours pro️",
+      "contact": "🤙 Contact"
     },
     "en": {
-      "about": "About",
-      "links": "Links",
-      "skills": "Skills",
-      "career": "Professional course",
-      "contact": "Contact"
+      "about": "😄 About",
+      "links": "🔗 Links",
+      "skills": "🤹 Skills",
+      "career": "⏱️ Professional course",
+      "contact": "🤙 Contact"
     }
   },
   "cv": {

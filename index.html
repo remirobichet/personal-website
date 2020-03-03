@@ -15,18 +15,17 @@
 
     <meta property="og:title" content="Rémi Robichet">
     <meta property="og:site_name" content="Site personnel de Rémi Robichet">
-    <meta property="og:url" content="http://remirobichet.fr/">
+    <meta property="og:url" content="https://remirobichet.fr/">
     <meta property="og:description"
           content="Rémi Robichet, développeur web à Toulouse. Passionné du web et de la culture internet.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/remirobichet.jpg"/>
 
     <title>Rémi Robichet - Développeur web</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/styles.scss" rel="stylesheet">
     <link href="assets/css/print.scss" rel="stylesheet" type="text/css" media="print">
-    <link rel="shortcut icon" type="image/png" href="assets/images/logoremirobichet.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -47,13 +46,13 @@
 <header data-text="about">
     <div data-template="intro">
         {{#data}}
-        <p><span class="print_hide">{{welcome-site}}</span><span class="print_show">{{welcome-print}}</span>,
+        <p><span class="print_hide"><span role="img" aria-label="hi">👋</span> {{welcome-site}}</span><span class="print_show">{{welcome-print}}</span>,
             {{jedanselemia}}</p>
         <h1>Rémi Robichet</h1>
         <div class="discover"></div>
         <h2>— {{job}}</h2>
         <br/>
-        <p>{{hobby}}</p>
+        <p>{{hobby}} <span role="img" aria-label="hobby">💻</span></p>
         <br class="print_show"/>
         <p>{{job2}}</p>
         {{/data}}
@@ -65,15 +64,15 @@
 <article data-text="links">
     <ul data-template="portfolio">
         {{#data}}
-        <li><i class="fa fa-{{icon}}"></i> <a href="{{url}}" target="_blank">{{name}}</a>:
+        <li><span role="img" aria-label="{{name}}">{{icon}}</span> <a href="{{url}}" target="_blank">{{name}}</a>:
             {{text}}
             <div class="discover"></div>
         </li>
         {{/data}}
-        <li class="print_hide"><i class="fa fa-file-text"></i> <a href="javascript:window.print();">CV</a>: 
+        <li class="print_hide"><span role="img" aria-label="CV print">📝</span> <a href="javascript:window.print();">CV</a>: 
             <span data-template="cv">{{#data}}{{text}}{{/data}}</span>
         </li>
-        <li class="print_hide"><i class="fa fa-code"></i> <a href="javascript:;">CV</a>: 
+        <li class="print_hide"><span role="img" aria-label="CV npm">👨🏻‍💻</span> <a href="javascript:;">CV</a>: 
             <span data-template="cv"><code>$ npx remirobichet-resume</code></span>
         </li>
     </ul>
@@ -119,14 +118,6 @@
         </a>
     </p>
 </article>
-
-<div class="preload">
-    <img src="assets/images/remirobichet.jpg" alt="Rémi Robichet">
-    <img src="assets/images/codepen.gif" alt="Codepen preview">
-    <img src="assets/images/twitter.gif" alt="Twitter preview">
-    <img src="assets/images/blog.gif" alt="Blog preview">
-    <img src="assets/images/hovergame.gif" alt="Hover Game preview">
-</div>
 
 <script src="assets/js/script.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62788682-1"></script>
