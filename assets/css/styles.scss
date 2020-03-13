@@ -158,7 +158,7 @@ article {
         text-align: center;
     }
 
-    > [data-template] {
+    > [data-template]:not(span) {
         display: none;
 
         &.loaded {
