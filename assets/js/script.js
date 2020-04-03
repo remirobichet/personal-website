@@ -18,7 +18,6 @@ let onReady = () => {
         body.innerHTML = parse(body.innerHTML);
 
         /* Set lang */
-        console.log(document.querySelector(`.lang-switcher[data-lang="${lang}"]`));
         document.querySelector(`.lang-switcher[data-lang="${lang}"]`).classList.add('active');
         document.querySelector('.lang-switcher:not(.active)').addEventListener('click', () => {
             localStorage.setItem('lang', document.querySelector('.lang-switcher:not(.active)').dataset.lang);
