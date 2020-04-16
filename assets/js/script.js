@@ -19,6 +19,9 @@ httpGetData(document.documentElement.lang).then(() => {
 
 let onReady = () => {
     ready(() => {
+        /* Show all when loaded */
+        document.querySelector('body').classList.add('loaded');
+
         /* Set lang */
         document.querySelector(`.lang-switcher[data-lang="${lang}"]`).classList.add('active');
         document.querySelector('.lang-switcher:not(.active)').addEventListener('click', () => {
