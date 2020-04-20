@@ -8,13 +8,11 @@
                                                                     
 Contact: remi.robichet@gmail.com
 Location: Toulouse, France
-Language: Français
+Language: Français, English
 
-/* Resources */
+/* SITE */
 
-Software: Brackets, Photoshop, Illustrator, FileZilla
+Software: VScode, Netlify, Gitlab
 Doctype: HTML5
-Standards: HTML5, CSS3
-
-Fonts: https://www.google.com/fonts
-Icons: http://fortawesome.github.io/Font-Awesome/
+Standards: HTML5, CSS3,
+Components: npm, Parcel, scss, Mustache, tag-to-emoji
