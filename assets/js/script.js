@@ -39,6 +39,13 @@ let onReady = () => {
                 this.classList.add('active');
             });
         });
+
+        if (window.location.hash.substr(1) === 'print') {
+          /* https://stackoverflow.com/a/33429455 */
+          setTimeout(() => {
+            window.print();
+          }, 500);
+        }
     });
 };
 
