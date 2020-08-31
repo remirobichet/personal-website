@@ -1,3 +1,7 @@
+//colors
+$color_background: #FFF;
+$color_text: #222;
+
 $print_font_size: 11/16;
 
 .print_show {
@@ -8,7 +12,13 @@ $print_font_size: 11/16;
     display: none;
 }
 
+html[data-theme] {
+    background-color: $color_background;
+}
+
 body {
+    background-color: $color_background;
+    color: $color_text;
     font-size: calc(#{$print_font_size} * 1em);
     margin: auto;
 
@@ -16,9 +26,14 @@ body {
         margin: 20px 50px;
     }
 
-    header::before,
-    article::before {
-        font-size: calc(#{$print_font_size} * 25px);
+    header,
+    article {
+        
+        &.loaded {
+            &::before {
+                font-size: calc(#{$print_font_size} * 20px);
+            }
+        }
     }
 
     article:nth-of-type(2) {
@@ -31,6 +46,12 @@ body {
 
     article > [data-template].loaded[data-template="contact"] {
         flex-direction: row;
+    }
+
+    article > [data-template="career"] {
+        li {
+            margin: 10px 0;
+        }
     }
 
     a:link:not(.print_no_href):after,
