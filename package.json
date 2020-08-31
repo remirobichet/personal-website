@@ -21,10 +21,10 @@
   "dependencies": {
     "mustache": "^4.0.1",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.3.1",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "tag-to-emoji": "^1.0.3"
   },
   "devDependencies": {
-    "sass": "^1.26.3"
+    "sass": "^1.26.10"
   }
 }
