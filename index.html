@@ -93,7 +93,10 @@
 <article data-text="career">
     <ul data-template="career">
         {{#data}}
-        <li><b>{{date}}:</b> {{mission}}</li>
+        <li>
+            <b>{{date}}:</b> {{mission}}
+            {{#text}}<p>{{text}}</p>{{/text}}
+        </li>
         {{/data}}
     </ul>
 </article>
