@@ -10,7 +10,8 @@ let httpGetFromApi = (api, lang, callback) => {
         request.open('GET', url, true);
         request.onload = () => {
             if (request.status >= 200 && request.status < 400) {
-                let data = {...data, ...JSON.parse(request.response)};
+                let data;
+                data = {...data, ...JSON.parse(request.response)};
                 return callback(data).then(() => resolve());
             }
         };
