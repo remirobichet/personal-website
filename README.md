@@ -1,6 +1,6 @@
 # personnal-website
 
-> 💡 Today I learned
+> :man: My personnal website
 
 ## :factory: Local run
 
