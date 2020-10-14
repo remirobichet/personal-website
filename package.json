@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Nothing special, just the versioned code of my website :tada:",
   "main": "index.html",
+  "targets": {
+    "main": false
+  },
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
