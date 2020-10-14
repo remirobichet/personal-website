@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "Nothing special, just the versioned code of my website :tada:",
+  "description": "My personnal website",
   "main": "index.html",
   "targets": {
     "main": false
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/remirbt/personal-website.git"
+    "url": "git+https://github.com/remirobichet/personal-website.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/remirbt/personal-website/issues"
+    "url": "https://github.com/remirobichet/personal-website/issues"
   },
-  "homepage": "https://gitlab.com/remirbt/personal-website#readme",
+  "homepage": "https://github.com/remirobichet/personal-website#readme",
   "dependencies": {
     "mustache": "^4.0.1",
     "tag-to-emoji": "^1.0.3"
