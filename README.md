@@ -8,10 +8,12 @@
 npm run dev
 ```
 
+## :rocket: deploy
+
+Local working version of Nodejs is specified in `.nvmrc` to use the same while deploying.
+
 ## :memo: Information
 
-Netlify : https://app.netlify.com/sites/remirobichet/overview
-
-Datas : https://gitlab.com/remirbt/personal-functions
-
-Web stack : https://cloudfour.com/thinks/tiny-web-stacks/
+- [Netlify](https://app.netlify.com/sites/remirobichet/overview)
+- [Data](https://gitlab.com/remirbt/personal-functions)
+- [Web stack](https://cloudfour.com/thinks/tiny-web-stacks/)
