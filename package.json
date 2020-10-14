@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "postbuild": "cp -r static/* dist/"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,6 @@
   "homepage": "https://gitlab.com/remirbt/personal-website#readme",
   "dependencies": {
     "mustache": "^4.0.1",
-    "parcel-plugin-static-files-copy": "^2.5.0",
     "tag-to-emoji": "^1.0.3"
   },
   "devDependencies": {
