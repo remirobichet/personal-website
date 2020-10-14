@@ -8,7 +8,7 @@
 npm run dev
 ```
 
-## :rocket: deploy
+## :rocket: Deploy
 
 Local working version of Nodejs is specified in `.nvmrc` to use the same while deploying.
 
