@@ -24,7 +24,7 @@
     "tag-to-emoji": "^1.0.3"
   },
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
+    "parcel": "^2.0.0-nightly.425",
     "sass": "^1.26.10"
   }
 }
