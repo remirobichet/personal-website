@@ -1,8 +1,14 @@
-# My personal website
+# personnal-website
 
-Nothing special, just the versioned code of my website :tada:
+> 💡 Today I learned
 
-Repository : https://gitlab.com/remirbt/personal-website
+## :factory: Local run
+
+```sh
+npm run dev
+```
+
+## :memo: Information
 
 Netlify : https://app.netlify.com/sites/remirobichet/overview
 
