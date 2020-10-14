@@ -20,11 +20,11 @@
   "homepage": "https://gitlab.com/remirbt/personal-website#readme",
   "dependencies": {
     "mustache": "^4.0.1",
-    "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.5.0",
     "tag-to-emoji": "^1.0.3"
   },
   "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
     "sass": "^1.26.10"
   }
 }
