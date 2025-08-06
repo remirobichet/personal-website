@@ -1,8 +1,8 @@
 [build]
-  publish = "dist/"
-  command = "npm run build"
+  publish = "." # This tells Netlify to serve files from the current directory (root)
+  command = ""  # No build command needed since it's a static site
 
 [[redirects]]
   from = "/*"
-  to = "/error.html"
-  status = 404
+  to = "/index.html"
+  status = 200
